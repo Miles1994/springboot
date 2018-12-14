@@ -1,0 +1,40 @@
+#server:
+#  port: 8090
+#  context-path: /springboot
+#spring:
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://localhost:3306/data?characterEncoding=UTF-8
+#    username: root
+#    password: a123123
+#    driver-class-name: com.mysql.jdbc.Driver
+#mybatis:
+#  type-aliases-package: com.baizhi.demo2.entity
+server:
+  port: 8090
+  context-path: /springboot
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/data?characterEncoding=UTF-8
+    username: root
+    password: a123123
+#  http:
+#    multipart:
+#      max-file-size: 100MB
+#    encoding:
+#      charset: utf-8
+#      force: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+mybatis:
+  type-aliases-package: com.baizhi.demo2.entity
