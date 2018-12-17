@@ -23,4 +23,5 @@ public class Emp implements Serializable {
     private String name;
     private Double salary;
     private Integer age;
+    private String realName;
 }
